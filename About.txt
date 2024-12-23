@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="https://sweetway.github.io/Photo/Олигарх.jpg">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--Нижнее меню-->
+        <div id="Position">
+            <hr color="black">
+            <div class="center">
+                <H1><span class="1"><a href="" class="color">🏠</a></span> <span class="2"><a href="" class="color">💰</a></span> <span class="3"><a href="" class="color">📈</a></span> <span class="4"><a href="" class="color">🏦</a></span> <span class="5"><a href="" class="color">👱</a></span></H1>
+                <H3 id="Menu"><a href="" class="color">Главная</a> <a href="" class="color">Бизнесы</a> <a href="" class="color">Рынок</a> <a href="" class="color">Банк</a> <a href="" class="color">Профиль</a></H3>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+body {
+    font-family:Verdana;
+}
+a {
+    text-decoration:none;
+}
+
+[class="1"] {
+    margin-left:30px;
+}
+[class="2"] {
+    margin-left:180px;
+}
+[class="3"] {
+    margin-left:180px;
+}
+[class="4"] {
+    margin-left:150px;
+}
+[class="5"] {
+    margin-left:168px;
+}
+
+.Size {
+    font-size:60px;
+}
+/* .Tcenter {
+    text-align:center;
+} */
+.color {
+    color:black;
+}
+.PreColor {
+    color:royalblue;
+}
+
+/* Menu */
+#Menu {
+    word-spacing:130px;
+}
+.center {
+    float:left;
+}
+#Position {
+    background-color:white;
+    position:fixed;
+    bottom:0;
+}
+
+
+
+Готовые файлы:
+1. index.html/style.css
+2. Buisness.html/Buisness.css
+3. Open.html/Open.css
+4. Close.html/Close.css

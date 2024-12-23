@@ -1,0 +1,66 @@
+body {
+    font-family:Verdana;
+    touch-action:manipulation;
+}
+a {
+    text-decoration:none;
+}
+
+[class="1"] {
+    margin-left:30px;
+}
+[class="2"] {
+    margin-left:180px;
+}
+[class="3"] {
+    margin-left:180px;
+}
+[class="4"] {
+    margin-left:150px;
+}
+[class="5"] {
+    margin-left:168px;
+}
+
+.Hint {
+    color:gray;
+    text-align:center;
+}
+.color {
+    color:black;
+}
+.PerColor {
+    color:royalblue;
+}
+
+/* Money */
+#Money {
+    width:965px;
+    height:300px;
+    border-radius:50px;
+    margin-top:10px;
+    background-color:royalblue;
+}
+.MoneySize {
+    font-size:60px;
+}
+.Money1 {
+    margin-left:20px;
+}
+.Money2 {
+    float:left;
+    margin-left:70px;
+}
+
+/* Menu */
+#Menu {
+    word-spacing:130px;
+}
+.center {
+    float:left;
+}
+#Position {
+    background-color:white;
+    position:fixed;
+    bottom:0;
+}
