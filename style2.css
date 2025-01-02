@@ -1,5 +1,6 @@
 body {
     font-family:Verdana;
+    overflow:hidden;
     touch-action:manipulation;
 }
 /* a {
@@ -15,25 +16,20 @@ body {
     color:black;
     background-color:royalblue;
     width:99%;
-    height:300px;
-    border-radius:50px;
+    height:150px;
     margin-top:10px;
     display:inline-block;
+    border-radius:25px;
+}
+#MoneyMach {
+    padding-left:20px;
 }
 
-/* Click */
 #Click {
-    text-align:center;
+    color:grey;
+    height:200px;
 }
-#Click1 {
-    background-color:black;
-    width:100%;
-    height:300px;
-}
-/* #Click2 {
-} */
-#Click3 {
-    background-color:black;
-    width:100%;
-    height:100% - 750px;
+
+#Menu {
+    bottom:0;
 }
