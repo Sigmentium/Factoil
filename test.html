@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <style>
+        /* Стили для окна */
+        #popup {
+            background-color: white;
+            width: 300px;
+            display: none;
+            position:fixed;
+            top:50%;
+            left:50%;
+            padding: 20px;
+            /* transform: translate(-50%, -50%); */
+            border-radius: 10px;
+        }
+
+        /* Затемнение фона */
+        #overlay {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        /* Кнопка для закрытия */
+        .close-btn {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <button id="openBtn">Открыть окно</button>
+
+    <!-- Затемнение -->
+    <div id="overlay"></div>
+
+    <!-- Всплывающее окно -->
+    <div id="popup">
+        <p>Это всплывающее окно!</p>
+        <button class="close-btn" id="closeBtn">Закрыть</button>
+    </div>
+
+    <script>
+        // Получаем элементы
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+
+        // Функция для открытия окна
+        openBtn.addEventListener('click', () => {
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
+        });
+
+        // Функция для закрытия окна
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+        // Закрытие окна при клике на затемнение
+        overlay.addEventListener('click', () => {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
