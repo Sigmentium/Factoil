@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sigmentium: Factoil</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="https://sigmentium.github.io/Photo/Sigmentium.jpeg">
+        <link rel="stylesheet" href="Buisness.css">
+    </head>
+    <body>
+        <!--Основная часть-->
+        <div class="SupCenter">
+            <div id="Per">
+                <br><br>
+                <div class="SupCenter">
+                    <H2>Доход в час: <span id="Income">0</span> ₽</H2>
+                </div>
+            </div>
+        </div>
+        <div class="SupCenter">
+            <div id="PerMin">
+                <H2 id="Open" class="center">Открыть</H3>
+            </div>
+            <div id="PerMin">
+                <H2 id="Close" class="center">Закрыть</H2>
+            </div>
+        </div>
+        <hr color="black">
+        <div id="Buisnesses"></div>
+        <!--Окна-->
+        <div id="Overlay"></div>
+        <div class="SupCenter">
+            <div id="OpenBuissWindow">
+                <H2>Открыть бизнес</H2>
+                <hr color="black">
+                <input type="text" class="input" id="BuissName" placeholder="Название">
+                <br><br>
+                <select class="input" id="Type">
+                    <option selected disabled>Выберите тип бизнеса</option>
+                    <option value="ShopProd">Магазин продуктов</option>
+                    <option value="ShopCloth">Магазин одежды</option>
+                    <option value="ShopFlow">Магазин цветов</option>
+                    <option value="Make">Производство</option>
+                    <option value="Taxi">Такси</option>
+                    <option value="Trans">Грузовые перевозки</option>
+                </select>
+                <br><br>
+                <input type="number" class="input" id="Capital" placeholder="Стартовое вложение">
+                <br><br>
+                <button onclick="CreateBuisness()">Создать</button>
+                <H5 onclick="CloseWindow('OpenBuissWindow')">Закрыть окно</H5>
+            </div>
+        </div>
+        <div class="SupCenter">
+            <div id="CloseBuissWindow">
+                <H5 onclick="CloseWindow('CloseBuissWindow')">Закрыть окно</H5>
+            </div>
+        </div>
+        <!--Нижнее меню-->
+        <div id="Menu">
+            <div id="Item">
+                <H2>🏠</H2>
+                <span class="Mtext">Главная</span>
+            </div>
+            <div id="Item" class="blue">
+                <H2>💰</H2>
+                <span class="Mtext">Бизнесы</span>
+            </div>
+            <div id="Item">
+                <H2>📈</H2>
+                <span class="Mtext">Рынок</span>
+            </div>
+            <div id="Item">
+                <H2>🏦</H2>
+                <span class="Mtext">Банк</span>
+            </div>
+            <div id="Item">
+                <H2>👱</H2>
+                <span class="Mtext">Профиль</span>
+            </div>
+        </div>
+        <script src="Buisness.js"></script>
+    </body>
+</html>

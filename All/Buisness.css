@@ -1,0 +1,116 @@
+body {
+    font-family:Verdana;
+    touch-action:manipulation;
+    overflow:hidden;
+    margin:0;
+}
+button {
+    color:black;
+    background-color:royalblue;
+    width:150px;
+    height:50px;
+    font-size:20px;
+    border:2px solid black;
+    border-radius:10px;
+}
+
+.blue {
+    color:royalblue;
+}
+.center {
+    text-align:center;
+}
+.SupCenter {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Per */
+#Per {
+    color:black;
+    background-color:royalblue;
+    width:99%;
+    height:130px;
+    margin-top:10px;
+    display:inline-block;
+    border-radius:25px;
+}
+#PerMin {
+    color:black;
+    background-color:royalblue;
+    width:49%;
+    height:70px;
+    margin-top:5px;
+    display:inline-block;
+    border-radius:20px;
+}
+
+/* Menu */
+#Menu {
+    background-color:lightgrey;
+    width:100%;
+    position:fixed;
+    padding:10px 0;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    bottom:0;
+}
+#Item {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:14px;
+    cursor:pointer;
+}
+.Mtext {
+    font-size:larger;
+}
+
+/* Buisness */
+#Buisness {
+    color:black;
+    background-color:lightgrey;
+    width:95%;
+    height:50px;
+    cursor:pointer;
+    border:2px solid black;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.input {
+    color:black;
+    background-color:lightgrey;
+    width:250px;
+    height:30px;
+    font-size:20px;
+    border:2px solid black;
+    border-radius:10px;
+    text-align:center;
+}
+
+#Overlay {
+    display:none;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:1;
+    background:rgba(0, 0, 0, 0.5);
+    position:fixed;
+}
+#OpenBuissWindow, #CloseBuissWindow {
+    display:none;
+    background-color:white;
+    width:80%;
+    height:auto;
+    z-index:2;
+    text-align:center;
+    border:2px solid black;
+    border-radius:15px;
+    position:fixed;
+}
