@@ -1,47 +1,51 @@
 body {
     font-family:Verdana;
-}
-a {
-    text-decoration:none;
-}
-
-[class="1"] {
-    margin-left:30px;
-}
-[class="2"] {
-    margin-left:180px;
-}
-[class="3"] {
-    margin-left:180px;
-}
-[class="4"] {
-    margin-left:150px;
-}
-[class="5"] {
-    margin-left:168px;
+    touch-action:manipulation;
+    overflow:hidden;
+    margin:0;
 }
 
-.Size {
-    font-size:60px;
+.Des {
+    margin-left:20px;
 }
-/* .Tcenter {
+.SupCenter {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.center {
     text-align:center;
-} */
-.color {
-    color:black;
 }
-.PreColor {
-    color:royalblue;
+
+/* Per */
+#Per {
+    color:black;
+    background-color:royalblue;
+    width:99%;
+    height:130px;
+    margin-top:10px;
+    display:inline-block;
+    border-radius:25px;
 }
 
 /* Menu */
 #Menu {
-    word-spacing:130px;
-}
-.center {
-    float:left;
-}
-#Position {
-    position:absolute;
+    background-color:lightgrey;
+    width:100%;
+    position:fixed;
+    padding:10px 0;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
     bottom:0;
+}
+#Item {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:14px;
+    cursor:pointer;
+}
+.Mtext {
+    font-size:larger;
 }

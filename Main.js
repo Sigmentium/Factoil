@@ -1,5 +1,5 @@
-let Balance;
 let res;
+let Balance;
 
 const Height = window.innerHeight;
 const ClickHeight = document.getElementById('Click').offsetHeight;
